@@ -31,28 +31,6 @@ public class CDUtils {
         }
     }
     
-    public static func download(_ url: URL, session: URLSession, completionHandler: @escaping(_ json: [String: Any]) -> Void) {
-        var request: URLRequest = URLRequest(url: url)
-        request.httpMethod = "GET"
-        session.dataTask(with: url, completionHandler: { data, res, err in
-            if let err = err {
-                print(err)
-                return
-            }
-            guard let data = data else {
-                print("nodata")
-                return
-            }
-            
-            do {
-                let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as! [String: Any]
-                completionHandler(json)
-            } catch let error as NSError {
-                print("Failed to load: \(error.localizedDescription)")
-            }
-        }).resume()
-    }
-    
     public static func saveDataObject(entityName: String, dictionary: [String: Any], parent: (entityName: String, value: NSManagedObject)?, context: NSManagedObjectContext) {
         let dataObject = NSEntityDescription.insertNewObject(forEntityName: entityName, into: context)
         

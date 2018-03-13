@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC358BF02056ACE800F4F062 /* CDUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC358BEF2056ACE800F4F062 /* CDUtils.swift */; };
 		ECAFC6C22056921000C1A598 /* ExtensionToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECAFC6B82056921000C1A598 /* ExtensionToolkit.framework */; };
 		ECAFC6C72056921000C1A598 /* ExtensionToolkitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAFC6C62056921000C1A598 /* ExtensionToolkitTests.swift */; };
 		ECAFC6C92056921000C1A598 /* ExtensionToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = ECAFC6BB2056921000C1A598 /* ExtensionToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,6 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC358BEF2056ACE800F4F062 /* CDUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDUtils.swift; sourceTree = "<group>"; };
 		ECAFC6B82056921000C1A598 /* ExtensionToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExtensionToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECAFC6BB2056921000C1A598 /* ExtensionToolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionToolkit.h; sourceTree = "<group>"; };
 		ECAFC6BC2056921000C1A598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				ECAFC6D22056926C00C1A598 /* Extensions.swift */,
+				EC358BEF2056ACE800F4F062 /* CDUtils.swift */,
 			);
 			path = Code;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC358BF02056ACE800F4F062 /* CDUtils.swift in Sources */,
 				ECAFC6D32056926C00C1A598 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
